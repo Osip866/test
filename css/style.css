@@ -194,6 +194,10 @@ body {
     font-size: 18px;
 }
 
+.menu__link:hover {
+    color: #1934C1;
+}
+
 @media (max-width: 549px) {
     .menu__item {
         font-size: 22px;
@@ -473,6 +477,8 @@ body {
 
 .main-block__container {}
 
+.page__benefitBlock {}
+
 .main-block__body {
     padding: 174px 0 132.8px 181px;
     position: relative;
@@ -538,7 +544,7 @@ body {
 
 @media(max-width: 479px) {
     .main-block__buttons {
-        margin: 15px 0 0 0;
+        margin: 15px auto 0 auto;
     }
 }
 
@@ -552,11 +558,21 @@ body {
     border-radius: 20px 0px;
 }
 
+.button:hover {
+    background-color: #2E35E1
+}
+
 .main-block__button {
     font-family: Roboto;
     font-size: 20px;
     line-height: 117%;
     color: #FFFFFF;
+}
+
+@media(max-width: 479px) {
+    .main-block__button {
+        font-size: 18px;
+    }
 }
 
 .main-block__image {
@@ -567,10 +583,102 @@ body {
     left: 0;
 }
 
+.ellipse {
+    position: absolute;
+    width: 642px;
+    height: 547px;
+    left: 1411px;
+    top: 243px;
+    background-color: #324EE0;
+    filter: blur(500px);
+}
+
+@media(max-width: 991px) {
+    .ellipse {
+        left: 902px;
+        top: 243px;
+    }
+}
+
+@media(max-width: 479px) {
+    .ellipse {
+        left: 602px;
+        top: 43px;
+    }
+}
+
 #canvas {
     object-fit: cover;
     position: absolute;
     z-index: -1;
+}
+
+
+/* _____BENEFIT________________ */
+
+.benefit {}
+
+.benefit-block__container {}
+
+.benefit__body {
+    display: flex;
+    /* margin: 0 -87.5px; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media (max-width:479px) {
+    .benefit__body {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.benefit__column {
+    max-width: 370px;
+    padding: 0px 32.5px;
+    flex: 0 1 25%;
+}
+
+@media (max-width:479px) {
+    .benefit__column {
+        max-width: 370px;
+        padding: 20px 32.5px;
+        border: #1934C1 1px solid;
+        border-radius: 30px;
+        height: 254px;
+        margin-top: 30px;
+    }
+}
+
+.benefit__item {}
+
+.item-benefit {}
+
+.item-benefit__icon {
+    display: flex;
+    justify-content: center;
+}
+
+.item-benefit__icon img {
+    width: 65px;
+    height: 65px;
+}
+
+.item-benefit__title {
+    font-weight: 500;
+    font-size: 20px;
+    color: #1934C1;
+    line-height: 160%;
+    margin-top: 21px;
+    text-align: start;
+}
+
+.item-benefit__text {
+    font-size: 14px;
+    color: #B0B0B0;
+    line-height: 160%;
 }
 
 
