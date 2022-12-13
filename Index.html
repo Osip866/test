@@ -19,6 +19,20 @@
         <!-- -------------------ШАПКА------------------------------------------ -->
         <header class="header">
             <div class="_container header__container">
+                <!-- -------------------ГАМБУРГЕР------------------------------------------ -->
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                      <span></span>
+                    </label>
+                    <ul class="menu__box">
+                        <li><a class="menu__itemH" href="#">Главная</a></li>
+                        <li><a class="menu__itemH" href="#">О проекте</a></li>
+                        <li><a class="menu__itemH" href="#">Инструменты</a></li>
+                        <li><a class="menu__itemH" href="#">Блог</a></li>
+                        <li><a class="menu__itemH" href="#">Обратная связь</a></li>
+                    </ul>
+                </div>
                 <!-- -------------------Логотип------------------------------------------ -->
                 <a href="" class="header__logo">
                     <img src="img/Group 48095651.svg" alt="CMS.BY">
@@ -45,6 +59,8 @@
                             <a href="" class="menu__link">Обратная связь</a>
                         </li>
                     </ul>
+
+
                     <!-- -------------------МЕНЮ------------------------------------------ -->
                     <ul class="contact__list">
                         <li class="contact__item">
@@ -54,13 +70,13 @@
                         <li class="contact__item">
                             <a href="" class="contact__link">
                                 <img src="img/quill_mail.svg" alt="e-mail">
-                                <span class="font_inter">info@cms.by</span>
+                                <span class="font_inter displayNone">info@cms.by</span>
                             </a>
                         </li>
                         <li class="contact__item">
                             <a href="" class="contact__link">
                                 <img src="img/phone.svg" alt="phone">
-                                <span class="font_voces">+37525 613 15 07</span>
+                                <span class="font_voces displayNone">+37525 613 15 07</span>
                             </a>
                         </li>
                     </ul>
@@ -163,83 +179,339 @@
                     </div>
                 </div>
             </section>
+            <div class="page__aboutTheProject aboutTheProject">
+                <div class="aboutTheProject__container _container">
+                    <div class="aboutTheProject__body bodyProject__content">
+                        <h2 class="bodyProject__content__title">Давайте мы Вам расскажем немного о проекте</h2>
+                        <div class="bodyProject__content__info">
+                            <div class="bodyProject__content__image">
+                                <div class="bodyProject__background"></div>
+                                <img src="img/aboutTheProject/3d-render-of-robot-with-books 1.png" alt="">
+                                <div class="bodyProject__content__dashboard"></div>
+                            </div>
+                            <div class="bodyProject__content__text textProject">
+                                <h3 class="textProject__title">Что такое <a href="">CMS.BY</a> </h3>
+                                <div class="textProject__text">
+                                    <p class="textProject__text_p">Проект CMS.BY создан для помощи специалистам в сфере IT. Здесь собраны различные инструменты под многие направления и решения. При реализации инструментов выполнялся опрос среди многих специалистов в данной сфере. </p>
+                                    <p class="textProject__text_p">Проект CMS.BY создан для помощи специалистам в сфере IT. Здесь собраны различные инструменты под многие направления и решения. При реализации инструментов выполнялся опрос среди многих специалистов в данной сфере. </p>
+                                    <p class="textProject__text_p">Также помимо инструментов постепенно наполняются и посты с готовыми решениями для многих направлений</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page__tools tools">
+                <div class="tools__container _container">
+                    <div class="tools__body">
+                        <div class="tools__title">
+                            <h2>Инструменты</h2>
+                        </div>
+                        <div class="tools__block block">
+                            <div class="block__sidebar">
+                                <a href="">Наши сервисы</a>
+                                <a href="">Внутренняя оптимизация</a>
+                                <a href="">Аудит и аналитика</a>
+                                <a href="">Техническая оптимизация</a>
+                                <a href="">Инструменты вебмастера</a>
+                                <a href="">Маркетинговые инструменты</a>
+                                <p class="showAll__text">
+                                    <a href=""> Показать все инструменты</a></p>
+                                <p class="not__tools">Не нашли нужный инструмент? <br> Напишите, мы обязательно поможем Вам
+                                    <a href="">info@cms.by</a>
+                                </p>
+                                <div class="tools__background"></div>
+                            </div>
+                            <div class="block__body">
+                                <div class="block__body__item item">
+                                    <div class="item__icon">
+                                        <img src="img/tools/tool_1.svg" alt="">
+                                    </div>
+                                    <div class="item__title">Генератор ЧПУ</div>
+                                    <div class="item__text">Инструмент выполняет транслитерацию русских букв по стандартам поисковых систем</div>
+                                </div>
+                                <div class="block__body__item item">
+                                    <div class="item__icon">
+                                        <img src="img/tools/tool_2.svg" alt="">
+                                    </div>
+                                    <div class="item__title">Генератор robots.txt 2</div>
+                                    <div class="item__text">Инструмент выполняет транслитерацию русских букв по стандартам поисковых систем</div>
+                                </div>
+                                <div class="block__body__item item">
+                                    <div class="item__icon">
+                                        <img src="img/tools/tool_3.svg" alt="">
+                                    </div>
+                                    <div class="item__title">Генератор метатегов</div>
+                                    <div class="item__text">Инструмент выполняет транслитерацию русских букв по стандартам поисковых систем</div>
+                                </div>
+                                <div class="block__body__item item">
+                                    <div class="item__icon">
+                                        <img src="img/tools/tool_4.svg" alt="">
+                                    </div>
+                                    <div class="item__title">Какое у меня разрешение</div>
+                                    <div class="item__text">Инструмент выполняет транслитерацию русских букв по стандартам поисковых систем</div>
+                                </div>
+                                <div class="block__body__item item">
+                                    <div class="item__icon">
+                                        <img src="img/tools/tool_5.svg" alt="">
+                                    </div>
+                                    <div class="item__title">Симулятор разрешения экрана</div>
+                                    <div class="item__text">Инструмент выполняет транслитерацию русских букв по стандартам поисковых систем</div>
+                                </div>
+                                <div class="block__body__item item">
+                                    <div class="item__icon">
+                                        <img src="img/tools/tool_6.svg" alt="">
+                                    </div>
+                                    <div class="item__title">Информация о моем браузере</div>
+                                    <div class="item__text">Инструмент выполняет транслитерацию русских букв по стандартам поисковых систем</div>
+                                </div>
+                                <div class="block__body__item item">
+                                    <div class="item__icon">
+                                        <img src="img/tools/tool_7.svg" alt="">
+                                    </div>
+                                    <div class="item__title">Генератор редиректов для htaccess</div>
+                                    <div class="item__text">Инструмент выполняет транслитерацию русских букв по стандартам поисковых систем</div>
+                                </div>
+                                <div class="block__body__item item">
+                                    <div class="item__icon">
+                                        <img src="img/tools/tool_8.svg" alt="">
+                                    </div>
+                                    <div class="item__title">Проверка кода состояния HTTP</div>
+                                    <div class="item__text">Инструмент выполняет транслитерацию русских букв по стандартам поисковых систем</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="page__posts posts">
+                <div class="posts__container _container">
+                    <div class="posts__body">
+                        <div class="posts__header">
+                            <h2>Посты с готовыми решениями</h2>
+                        </div>
+                        <div class="posts__main">
+                            <div class="posts__main__nav">
+                                <ul class="posts__list">
+                                    <li class="posts__item">
+                                        <a href="">HTML/CSS</a>
+                                    </li>
+                                    <li class="posts__item">
+                                        <a href=""> JS/JQuery</a>
+                                    </li>
+                                    <li class="posts__item">
+                                        <a href=""> PHP</a>
+                                    </li>
+                                    <li class="posts__item">
+                                        <a href=""> SEO</a>
+                                    </li>
+                                    <li class="posts__item">
+                                        <a href=""> htaccess</a>
+                                    </li>
+                                    <li class="posts__item">
+                                        <a href=""> MySQL </a>
+                                    </li>
+                                    <li class="posts__item">
+                                        <a href="">Справочник</a>
+                                    </li>
+                                    <li class="posts__item">
+                                        <a href="">Прочее</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="posts__main__main">
+                                <div class="posts__main__item">
+                                    <img src="img/posts/post_1.png" alt="">
+                                    <div class="post__item__text">
+                                        <div class="item__text__date">13.01.2022</div>
+                                        <div class="item__text__language">
+                                            <a href="">PHP</a>
+                                        </div>
+                                        <div class="item__text__text">301 редирект на PHP</div>
+                                    </div>
+                                </div>
+                                <div class="posts__main__item">
+                                    <img src="img/posts/post_2.png" alt="">
+                                    <div class="post__item__text">
+                                        <div class="item__text__date">13.01.2022</div>
+                                        <div class="item__text__language">
+                                            <a href="">PHP</a>
+                                        </div>
+                                        <div class="item__text__text">Типы данных в PHP</div>
+                                    </div>
+                                </div>
+                                <div class="posts__main__item">
+                                    <div class="posts__lastPosts">Последние посты</div>
+                                    <div class="lastPosts__body">
+                                        <a href="" class="lastPosts__item">Как реализовать 301-редирект в файле htaccess. Правила и примеры настройки</a>
+                                        <a href="" class="lastPosts__item">Управление доступом к файлам на сайте</a>
+                                        <a href="" class="lastPosts__item">301 редирект на PHP</a>
+                                        <a href="" class="lastPosts__item">Типы данных в PHP</a>
+                                        <a href="" class="lastPosts__item">Динамические имена переменных в PHP</a>
+                                        <a href="" class="lastPosts__item">Пример простого создания REST API на PHP</a>
+                                        <a href="" class="lastPosts__item__last">Посмотреть все посты</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page__team team">
+                <div class="team__container _container">
+                    <div class="team__body">
+                        <div class="team__info">
+                            <div class="team__info__title">
+                                <h2>Присоединяйся к нашей команде</h2>
+                            </div>
+                            <div class="team__info__text">Ищем энергичных, идейных, высокомотивированных людей желающих развиваться как преподаватель и оказывать помощь людям, познающим IT мир</div>
+                            <div class="team__info__buttons">
+                                <a href="" class="team__info__button button">Присоединиться</a>
+                                <a href="" class="team__info__button button">Задать вопрос</a>
+                            </div>
+                        </div>
+                        <div class="team__image">
+                            <img src="img/team/image 82.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page__blog blog">
+                <div class="blog__container _container">
+                    <div class="blog__body">
+                        <div class="blog__body__info blog__info">
+                            <h2 class="blog__info__title">Подписывайтесь на наш блог</h2>
+                            <div class="blog__info__text">Присоединяйся к нам, ищи актуальные и полезные решения в сфере IT вместе с нами. C нами Мир познавать проще и надежнее</div>
+                        </div>
+                        <div class="blog__body__form blog__form">
+                            <div class="blog__form__header">
+                                <img src="img/blog/icon.svg" alt="" class="blog__form__icon">
+                                <input type="text" class="blog__form__input" placeholder="Введите Ваш e-mail">
+                            </div>
+                            <a href="" class="blog__form__button button">Подписаться</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="page__form form">
+                <div class="form__container _container">
+                    <div class="form__title">
+                        <h2>Мы всегда рады помочь Вам </h2>
+                    </div>
+                    <div class="form__body">
+                        <div class="form__sidebar">
+                            <div class="form__sidebar__title">У Вас остались вопросы? Обязательно обратитесь к нам Мы проконсультируем Вас по любому вопросу в сфере IT </div>
+                            <div class="form__sidebar__name form__sidebar_input ">
+                                <input type="text" placeholder="Введите Ваше имя" class="form__input">
+                            </div>
+                            <div class="form__sidebar__email form__sidebar_input">
+                                <input type="text" placeholder="Введите  Ваш e-mail и/или номер телефона*" class="form__input">
+                            </div>
+                            <div class="form__sidebar__file form__sidebar_input">
+                                <input type="text" placeholder="Прикрепите файл" class="form__input">
+                            </div>
+                            <div class="form__sidebar__text form__sidebar_input">
+                                <textarea name="" id="" cols="30" rows="9" placeholder="Введите текст Вашего сообщения" class="form__input"></textarea>
+                            </div>
+                            <div class="form__sidebar__info">*поля обязательные для заполнения</div>
+                            <div class="form__sidebar__viewed">
+                                <input type="checkbox"><label for="">Я ознакомлен(а) с Политикой конфиденциальности и Политикой обработки персональных данных </label>
+                            </div>
+                            <div class="form__sidebar__buttons">
+                                <a href="" class="form__sidebar__button button">Отправить</a>
+                                <a href="" class="form__sidebar__button button">Отмена</a>
+                            </div>
+                        </div>
+                        <div class="form__background">
+                            <img src="img/forms/Group 48095774.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </main>
 
 
         <!-- ------------------ПОДВАЛ------------------------------------------- -->
         <footer class="footer">
-            Я подвал </footer>
+            <div class="footer__container _container">
+                <div class="footer__bacground"></div>
+                <div class="footer__column__first first">
+                    <div class="first__body">
+                        <div class="first__logo">
+                            <a href="" class="header__logo">
+                                <img src="img/Group 48095651.svg" alt="CMS.BY">
+                                <h1>CMS.BY</h1>
+                                <h3>Решение на каждый день</h3>
+                            </a>
+                        </div>
+                        <div class="first__text">Актуальные и полезные решения в сфере IT. C нами Мир познавать проще и надежнее</div>
+                        <div class="first__telephone">+37525 613 15 07</div>
+                        <div class="first__email"><a href="">info@cms.by</a></div>
 
+                    </div>
+                    <div class="first__footer">© CMS.BY | Сервис с готовыми решениями и инструментами</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- <main>
-            <canvas id="canvas"></canvas>
-            <div id="main_container">
-                <div id="text_main">
-                    <span class="font_play">Ответы на итересующие вопросы в сфере IT <br>
-                        <span style="color: #1934C1 ;">в свободном доступе</span> </span>
                 </div>
-                <span id="text2_main" class="font_inter">
-                    Полезные инструменты и посты которые решают рутинные задачи каждого дня. <br>
-                    Начни свой день правильно  
-                </span>
-                <div id="rectangle" class="font_roboto">Мне повезет :)</div>
-            </div>
-        </main>
-        <div id="benefit_block">
-            <div class="benefit ">
-                <img src="img/frame1.svg" alt="">
-                <span class="font_inter benefit_font">Доступ без ограничений</span>
-                <p class="font_inter">Возможность пользоваться инструментами абсолютно бесплатно и без ограничений</p>
-            </div>
-            <div class="benefit">
-                <img src="img/frame2.svg" alt="">
-                <span class="font_inter benefit_font">Более 2 млн. инструментов 
-    
-                </span>
-                <p class="font_inter">Наличие уникальных инструментов которые помогают в разработке, тестировании и seo продвижении сайтов</p>
-
-            </div>
-            <div class="benefit">
-                <img src="img/frame3.svg" alt="">
-                <span class="font_inter benefit_font">Опыт специалистов IT 
-                </span>
-                <p class="font_inter">Большая часть инструментов реализована благодаря полученному опыту специалистов в различных сферах IT</p>
-
-            </div>
-            <div class="benefit">
-                <img src="img/frame4.svg" alt="">
-                <span class="font_inter benefit_font">Простота в использовании </span>
-                <p class="font_inter">В большинстве случаев достаточно ввести требуемую информацию и дальше инструмент все сделает за вас</p>
-            </div>
-        </div>
-        <div id="about_the_project">
-            <div class="font_inter">Давайте мы Вам расскажем немного о проекте</div>
-            <div>
-                <img src="img/aboutProject.png" alt="">
-                <div id="about_the_project_text" class="font_inter">
-                    <span>Что такое <a href="" style="color:#1934C1 ">CMS.BY</a>   </span>
-                    <p>Проект CMS.BY создан для помощи специалистам в сфере IT. Здесь собраны различные инструменты под многие направления и решения. При реализации инструментов выполнялся опрос среди многих специалистов в данной сфере. </p>
-                    <p>Проект CMS.BY создан для помощи специалистам в сфере IT. Здесь собраны различные инструменты под многие направления и решения. При реализации инструментов выполнялся опрос среди многих специалистов в данной сфере. </p>
-                    <p>Также помимо инструментов постепенно наполняются и посты с готовыми решениями для многих направлений</p>
+                <div class="footer__column__center">
+                    <div class="center__title">Подписывайтесь на наш блог</div>
+                    <div class="center__input">
+                        <div class="blog__body__form blog__form__footer">
+                            <div class="blog__form__header">
+                                <img src="img/blog/icon.svg" alt="" class="blog__form__icon">
+                                <input type="text" class="blog__form__input" placeholder="Введите Ваш e-mail">
+                            </div>
+                            <a href="" class="blog__form__button button">Подписаться</a>
+                        </div>
+                    </div>
+                    <div class="center__text">Присоединяйся- будь в курсе новостей IT-рынка</div>
+                    <div class="center__social">
+                        <ul class="social_list">
+                            <li class="social_item">
+                                <a href="" class="social_link">
+                                    <img src="img/instagram_social_media_network_icon_193321 1.svg" alt="instagram">
+                                </a>
+                            </li>
+                            <li class="social_item">
+                                <a href="" class="social_link">
+                                    <img src="img/ant-design_twitter-circle-filled.svg" alt="twitter">
+                                </a>
+                            </li>
+                            <li class="social_item">
+                                <a href="" class="social_link">
+                                    <img src="img/entypo-social_facebook-with-circle.svg" alt="facebook">
+                                </a>
+                            </li>
+                            <li class="social_item">
+                                <a href="" class="social_link">
+                                    <img src="img/Vector.svg" alt="linkedin">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__column__end">
+                    <a href="">Главная </a>
+                    <a href="">О проекте</a>
+                    <a href="">Инструменты</a>
+                    <a href="">Блог</a>
+                    <a href="">Обратная связь</a>
+                    <div class="center__political">
+                        <a href="">Политика обработки персональных данных</a>
+                        <a href="">Политикой конфиденциальности</a>
+                        <a href="">Политика использования cookies</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <span id="tools" class="font_inter">Инструменты</span> -->
+        </footer>
+
+
     </div>
 
 
